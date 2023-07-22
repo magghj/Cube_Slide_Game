@@ -42,7 +42,7 @@ public class PlayerMovement : MonoBehaviour
             rb.velocity = new Vector3(rb.velocity.x, rb.velocity.y, 70);
         }
 
-        if (rb.position.y < -1f)
+        if (rb.position.y < -2f)
         {
             FindObjectOfType<GameManager>().EndGame();
         }

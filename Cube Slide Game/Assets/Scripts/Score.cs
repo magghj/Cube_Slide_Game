@@ -15,7 +15,11 @@ public class Score : MonoBehaviour {
 
     void Update()
     {
-        if (player.position.z > 0f)
+        if (player.position.z >= 10000f)
+        {
+            scoreText.text = "";
+        }
+        else if (player.position.z > 0f)
         {
             scoreText.fontSize = 64;
             scoreText.color = new Color(1f, 0.9563f, 0.4117f, 1.0f);
