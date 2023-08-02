@@ -6,7 +6,7 @@ public class Endtrigger : MonoBehaviour
 {
     public GameManager GameManager;
 
-    public float forwardForce = -10000f;
+    public float forwardForce = -5000f;
 
     public void OnTriggerEnter()
     {
